@@ -2,7 +2,7 @@ version: '2'
 
 services:
   aws-scheduled:
-    image: camptocamp/docker-aws-scheduled-maintenance:1.0
+    image: camptocamp/aws-scheduled-maintenance:1.0
     environment:
       AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
       AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
