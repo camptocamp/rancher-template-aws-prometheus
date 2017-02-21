@@ -1,0 +1,31 @@
+version: '2'
+.catalog:
+  questions:
+    - variable: AWS_REGION_NAME
+      label: AWS region name
+      default: eu-west-1
+      description: |
+        Enter your AWS Region Name
+      required: true
+      type: string
+    - variable: AWS_ACCESS_KEY_ID
+      label: AWS Access key ID
+      description: |
+        Access key ID for API accesses
+      required: true
+      type: string
+    - variable: AWS_SECRET_ACCESS_KEY
+      label: AWS Secret key
+      description: |
+        Secret key for API accesses
+      required: true
+      type: password
+    - variable: JOB_SCHEDULED
+      label: Jobber scheduled time
+      default: '0 */5 * * * *'
+      description: |
+        Jobber container JOB_TIME1 value
+      required: true
+
+aws-scheduled:
+  scale: 1
