@@ -16,7 +16,7 @@ services:
   jobber:
     image: blacklabelops/jobber:docker
     environment:
-      JOB_COMMAND1: 'docker start $(docker ps -a -f label=io.aws_scheduled=true --format="{{.ID}}")'
+      JOB_COMMAND1: 'docker start $$(docker ps -a -f label=io.aws_scheduled=true --format="{{.ID}}")'
       JOB_NAME1: aws-scheduled
       JOB_TIME1: ${JOB_SCHEDULED}
     labels:
