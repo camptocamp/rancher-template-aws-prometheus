@@ -1,4 +1,4 @@
-# Rancher catalog
+# Rancher catalog: Sends AWS information to prometheus
 
 Sends AWS information to a Prometheus gateway
 

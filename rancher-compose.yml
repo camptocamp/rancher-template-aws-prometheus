@@ -1,5 +1,10 @@
 version: '2'
 .catalog:
+  name: "aws-prometheus"
+  description: "Sends AWS information to Prometheus"
+  minimum_rancher_version: "v1.0.0"
+  version: "1.0"
+  uuid: "aws-prom-0"
   questions:
     - variable: AWS_REGION_NAME
       label: AWS region name
